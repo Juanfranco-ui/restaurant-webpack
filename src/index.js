@@ -18,24 +18,23 @@ function loadEvents() {
     const menuBtn = document.querySelector('.menuBtn');
     menuBtn.addEventListener('click', () => {
         clearScreen();
-        loadNav();
         loadMenu();
-        loadEvents();
     });
     const contactBtn = document.querySelector('.contactBtn');
     contactBtn.addEventListener('click', () => {
         clearScreen();
-        loadNav();
         loadContact();
-        loadEvents();
     });
     const homeBtn = document.querySelector('.homeBtn');
     homeBtn.addEventListener('click', () => {
         clearScreen();
-        loadNav();
         loadHome();
-        loadEvents();
     });
+    const btnHero = document.querySelector('.btnHero');
+    btnHero.addEventListener('click', () => {
+        clearScreen();
+        loadMenu();
+    })
 };
 
 init();

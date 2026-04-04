@@ -1,14 +1,15 @@
 export function loadNav() {
-    const contDiv = document.getElementById('content');
+    const contDiv = document.getElementById('nav');
     const nav = document.createElement('nav');
     const home = document.createElement('button');
     const menu = document.createElement('button');
     const contact = document.createElement('button');
-    home.className = 'homeBtn';
+    nav.classList.add('navCont');
+    home.classList.add('homeBtn');
     home.textContent = 'Home';
-    menu.className = 'menuBtn';
+    menu.classList.add('menuBtn');
     menu.textContent = 'Menu';
-    contact.className = 'contactBtn';
+    contact.classList.add('contactBtn');
     contact.textContent = 'Contact';
     nav.appendChild(home);
     nav.appendChild(menu);
